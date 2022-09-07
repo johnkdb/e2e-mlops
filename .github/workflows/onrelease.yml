@@ -15,8 +15,8 @@ jobs:
         python-version: [ 3.9 ]
 
     env:
-      DATABRICKS_HOST: ${{ secrets.DATABRICKS_PROD_HOST }}
-      DATABRICKS_TOKEN:  ${{ secrets.DATABRICKS_PROD_TOKEN }}
+      DATABRICKS_HOST: ${{ secrets.DATABRICKS_PROD_HOST_AZ }}
+      DATABRICKS_TOKEN:  ${{ secrets.DATABRICKS_PROD_TOKEN_AZ }}
 
     steps:
       - uses: actions/checkout@v3
